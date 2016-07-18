@@ -3,7 +3,7 @@ import time, struct, sys
 import socket as so
 
 try:
-    server = "10.11.9.105"
+    server = sys.argv[1]
     port = 5555
 except IndexError:
     print "[+] Usage %s host" % sys.argv[0]
